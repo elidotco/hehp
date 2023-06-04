@@ -36,7 +36,9 @@ const LoginScreen = () => {
             </View>
           </View>
           <View>
-            <TouchableOpacity>forgot password ?</TouchableOpacity>
+            <TouchableOpacity>
+              <Text>forgot password ?</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </View>
