@@ -5,6 +5,7 @@ import LogoScreen from "./screens/LogoScreen";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginScreen from "./screens/LoginScreen";
+import HomeScreen from "./screens/HomeScreen";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -24,6 +25,14 @@ export default function App() {
             headerShown: false,
           }}
           component={LoginScreen}
+        />
+
+        <Stack.Screen
+          name="Home"
+          options={{
+            headerShown: false,
+          }}
+          component={HomeScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
